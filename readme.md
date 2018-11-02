@@ -9,6 +9,19 @@
 ### Начальные установки
 ![Пример из программы Algo2000](docs/algo2000.png)
 
-## Запуск
+## Запуск в Algo2000
 ![Running](docs/running.gif)
 Получаем ответ: 1111111111111 => 13 (в десятичной)
+
+# Запуск Скрипта
+```bash
+$ npm run start
+# or
+$ yarn start
+# or
+$ node index.js
+# or
+$ nodejs index.js
+or
+$ ctr+c from index.js => open console in chrome => ctrl+v
+```
