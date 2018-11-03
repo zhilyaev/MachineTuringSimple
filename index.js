@@ -30,12 +30,12 @@ let f = true
 console.log('Лента До   : '+ L.join(''))
 while (f) {
     let c = T[A.lastIndexOf(L[i])][s]
-    console.warn('Команда: '+c)
+    //console.warn('Команда: '+c)
     if (c==='e') break;
     // Заменяем символ
-    console.warn('Лента была  : ' + L.join(''))
+    //console.warn('Лента была  : ' + L.join(''))
     L[i] = c[0]
-    console.warn('Лента сейчас: ' + L.join(''))
+    //console.warn('Лента сейчас: ' + L.join(''))
     // Шагаем
     switch (c[1]) {
       case '>':
@@ -52,12 +52,12 @@ while (f) {
     }
     // Делаем ленту бесконечной
     if (i>=L.length || i<0) L[i] = '_'
-    console.warn('Строка: '+L[i])
+    //console.warn('Строка: '+L[i])
     // Переходим в другое состояние
     s = +(c.length === 4 ? c[2]+c[3] : c[2])
     //console.warn('Состояние: '+s)
 }
 
-console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
+//console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
 console.log('Лента После: '+ L.join(''))
-console.log('Не пустых ячеек: '+ L.filter(l => l !== '_').length)
+//console.log('Не пустых ячеек: '+ L.filter(l => l !== '_').length)
